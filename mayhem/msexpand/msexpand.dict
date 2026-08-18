@@ -1,0 +1,6 @@
+# libFuzzer dictionary for libmspack's SZDD + KWAJ formats -- see libmspack/mspack/szdd.h and
+# kwaj.h. Only "\\", "\"" and "\xHH" escapes are valid inside a token; every byte here is written
+# as \xHH to keep the file libFuzzer-safe regardless of terminal/locale.
+"\x53\x5a\x44\x44\x88\xf0\x27\x33"
+"\x53\x5a\x20\x88\xf0\x27\x33\xd1"
+"\x4b\x57\x41\x4a\x88\xf0\x27\xd1"

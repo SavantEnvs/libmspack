@@ -1,0 +1,7 @@
+# libFuzzer dictionary for the CAB (MSCF cabinet) format -- see libmspack/mspack/cab.h.
+# Only "\\", "\"" and "\xHH" escapes are valid inside a token; every non-ASCII byte here is
+# written as \xHH to keep the file libFuzzer-safe regardless of terminal/locale.
+"\x4d\x53\x43\x46"
+"\x00\x00\x00\x00"
+"\x01\x00\x00\x00"
+"\x03\x01"
